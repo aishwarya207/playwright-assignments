@@ -13,6 +13,12 @@ test('checkboxes state', async({page}) => {
     await expect(checkbox2).toBeChecked();
 
     await checkbox1.uncheck();
+    await checkbox2.uncheck();
 
     await expect(checkbox1).not.toBeChecked();
+    await expect(checkbox2).not.toBeChecked();
+
 });
+    
+
+    
